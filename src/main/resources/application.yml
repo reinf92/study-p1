@@ -1,0 +1,23 @@
+# WAS server setting
+server:
+  port: 8090
+
+# Spring config setting
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://146.56.162.251/STCSTUDY?characterEncoding=utf8
+    username: STCSTUDY
+    password: STCSTUDY1@
+
+# Mybatis setting
+mybatis:
+  mapper-locations: classpath:/mapper/**/*Mapper.xml
+  type-aliases-package: com.stc.studyp1.domain
+  configuration:
+    map-underscore-to-camel-case: true

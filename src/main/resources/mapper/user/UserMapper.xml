@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.stc.studyp1.common.user.mapper.UserMapper">
+
+    <select id="selectList" parameterType="UserVO" resultType="UserVO">
+        SELECT * FROM SYS_USER
+    </select>
+
+    <select id="selectOne" parameterType="UserVO" resultType="UserVO">
+        SELECT * FROM SYS_USER
+        WHERE USER_ID = 'kim123'
+    </select>
+
+</mapper>
